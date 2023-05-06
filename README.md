@@ -1,7 +1,7 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/uelKf0-p)
-#Yolcu Bilet ve Kayıt Rezervasyon Sistemi: 
+Yolcu Bilet ve Kayıt Rezervasyon Sistemi: 
 
-###Motivasyonum->  Yapılacak seyahat için müşteriye kolaylık sağlayacak bir sistem geliştirmektir. Hızlı bir kayıt sistemiyle zamandan tasarruf ettirecektir. 
+Motivasyonum->  Yapılacak seyahat için müşteriye kolaylık sağlayacak bir sistem geliştirmektir. Hızlı bir kayıt sistemiyle zamandan tasarruf ettirecektir. 
 
 Amacım->  Proje sonunda dolu ya da boş koltukları rahatlıkla fark etmek için bir tablo, kayıt için bir tablo, oluşturulan sefer kaydı için bir tablo, sürücü için bir tablo ve rezervasyon için bir tablo oluşacaktır.
 
