@@ -16,5 +16,10 @@ namespace Test_Sefer_Seyahat
         {
 
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
