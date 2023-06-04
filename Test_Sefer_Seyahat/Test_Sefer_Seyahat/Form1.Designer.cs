@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.Btn7 = new System.Windows.Forms.Button();
             this.Btn8 = new System.Windows.Forms.Button();
@@ -70,26 +71,32 @@
             this.TxtSeferNo = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.TxtKaptanAd = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.TxtKaptanNo = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
+            this.BtnKaptan = new System.Windows.Forms.Button();
             this.label16 = new System.Windows.Forms.Label();
             this.MskKaptanTelefon = new System.Windows.Forms.MaskedTextBox();
-            this.BtnKaptan = new System.Windows.Forms.Button();
+            this.TxtKaptanNo = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.TxtKaptanAd = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.Btnrezervasyon = new System.Windows.Forms.Button();
-            this.label17 = new System.Windows.Forms.Label();
-            this.MskYolcuTelefon = new System.Windows.Forms.MaskedTextBox();
-            this.TxtSeferNumara = new System.Windows.Forms.TextBox();
-            this.label18 = new System.Windows.Forms.Label();
+            this.TxtKoltukNo = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.MskYolcuTc = new System.Windows.Forms.MaskedTextBox();
+            this.Btnrezervasyon = new System.Windows.Forms.Button();
+            this.TxtSeferNumara = new System.Windows.Forms.TextBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox5.SuspendLayout();
+            this.groupBox6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -119,6 +126,7 @@
             this.Btn7.TabIndex = 9;
             this.Btn7.Text = "7";
             this.Btn7.UseVisualStyleBackColor = true;
+            this.Btn7.Click += new System.EventHandler(this.Btn7_Click);
             // 
             // Btn8
             // 
@@ -129,6 +137,7 @@
             this.Btn8.TabIndex = 8;
             this.Btn8.Text = "8";
             this.Btn8.UseVisualStyleBackColor = true;
+            this.Btn8.Click += new System.EventHandler(this.Btn8_Click);
             // 
             // Btn9
             // 
@@ -139,7 +148,7 @@
             this.Btn9.TabIndex = 7;
             this.Btn9.Text = "9";
             this.Btn9.UseVisualStyleBackColor = true;
-            this.Btn9.Click += new System.EventHandler(this.button8_Click);
+            this.Btn9.Click += new System.EventHandler(this.Btn9_Click);
             // 
             // Btn4
             // 
@@ -150,6 +159,7 @@
             this.Btn4.TabIndex = 6;
             this.Btn4.Text = "4";
             this.Btn4.UseVisualStyleBackColor = true;
+            this.Btn4.Click += new System.EventHandler(this.Btn4_Click);
             // 
             // Btn5
             // 
@@ -160,6 +170,7 @@
             this.Btn5.TabIndex = 5;
             this.Btn5.Text = "5";
             this.Btn5.UseVisualStyleBackColor = true;
+            this.Btn5.Click += new System.EventHandler(this.Btn5_Click);
             // 
             // Btn6
             // 
@@ -170,6 +181,7 @@
             this.Btn6.TabIndex = 4;
             this.Btn6.Text = "6";
             this.Btn6.UseVisualStyleBackColor = true;
+            this.Btn6.Click += new System.EventHandler(this.Btn6_Click);
             // 
             // Btn3
             // 
@@ -180,6 +192,7 @@
             this.Btn3.TabIndex = 3;
             this.Btn3.Text = "3";
             this.Btn3.UseVisualStyleBackColor = true;
+            this.Btn3.Click += new System.EventHandler(this.Btn3_Click);
             // 
             // Btn2
             // 
@@ -190,6 +203,7 @@
             this.Btn2.TabIndex = 2;
             this.Btn2.Text = "2";
             this.Btn2.UseVisualStyleBackColor = true;
+            this.Btn2.Click += new System.EventHandler(this.Btn2_Click);
             // 
             // Btn1
             // 
@@ -200,6 +214,7 @@
             this.Btn1.TabIndex = 1;
             this.Btn1.Text = "1";
             this.Btn1.UseVisualStyleBackColor = true;
+            this.Btn1.Click += new System.EventHandler(this.Btn1_Click);
             // 
             // Btn0
             // 
@@ -234,7 +249,7 @@
             // 
             // BtnKaydet
             // 
-            this.BtnKaydet.BackColor = System.Drawing.Color.SeaShell;
+            this.BtnKaydet.BackColor = System.Drawing.Color.Salmon;
             this.BtnKaydet.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.BtnKaydet.Location = new System.Drawing.Point(96, 248);
             this.BtnKaydet.Name = "BtnKaydet";
@@ -242,6 +257,7 @@
             this.BtnKaydet.TabIndex = 13;
             this.BtnKaydet.Text = "Kaydet";
             this.BtnKaydet.UseVisualStyleBackColor = false;
+            this.BtnKaydet.Click += new System.EventHandler(this.BtnKaydet_Click);
             // 
             // CmbCinsiyet
             // 
@@ -368,11 +384,10 @@
             this.groupBox3.Size = new System.Drawing.Size(272, 311);
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.SeaShell;
+            this.button2.BackColor = System.Drawing.Color.Salmon;
             this.button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button2.Location = new System.Drawing.Point(82, 264);
             this.button2.Name = "button2";
@@ -380,6 +395,7 @@
             this.button2.TabIndex = 17;
             this.button2.Text = "Sefer Oluştur";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // TxtFiyat
             // 
@@ -510,31 +526,44 @@
             this.groupBox4.Controls.Add(this.label14);
             this.groupBox4.Location = new System.Drawing.Point(12, 329);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(243, 179);
+            this.groupBox4.Size = new System.Drawing.Size(243, 189);
             this.groupBox4.TabIndex = 3;
             this.groupBox4.TabStop = false;
             // 
-            // TxtKaptanAd
+            // BtnKaptan
             // 
-            this.TxtKaptanAd.Location = new System.Drawing.Point(111, 59);
-            this.TxtKaptanAd.Name = "TxtKaptanAd";
-            this.TxtKaptanAd.Size = new System.Drawing.Size(126, 27);
-            this.TxtKaptanAd.TabIndex = 3;
+            this.BtnKaptan.BackColor = System.Drawing.Color.Salmon;
+            this.BtnKaptan.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BtnKaptan.Location = new System.Drawing.Point(62, 131);
+            this.BtnKaptan.Name = "BtnKaptan";
+            this.BtnKaptan.Size = new System.Drawing.Size(123, 37);
+            this.BtnKaptan.TabIndex = 14;
+            this.BtnKaptan.Text = "Kaydet";
+            this.BtnKaptan.UseVisualStyleBackColor = false;
+            this.BtnKaptan.Click += new System.EventHandler(this.BtnKaptan_Click);
             // 
-            // label14
+            // label16
             // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(15, 62);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(90, 24);
-            this.label14.TabIndex = 2;
-            this.label14.Text = "Ad Soyad:";
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(22, 98);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(77, 24);
+            this.label16.TabIndex = 11;
+            this.label16.Text = "Telefon:";
+            // 
+            // MskKaptanTelefon
+            // 
+            this.MskKaptanTelefon.Location = new System.Drawing.Point(105, 98);
+            this.MskKaptanTelefon.Mask = "(999) 000-0000";
+            this.MskKaptanTelefon.Name = "MskKaptanTelefon";
+            this.MskKaptanTelefon.Size = new System.Drawing.Size(126, 27);
+            this.MskKaptanTelefon.TabIndex = 10;
             // 
             // TxtKaptanNo
             // 
-            this.TxtKaptanNo.Location = new System.Drawing.Point(109, 26);
+            this.TxtKaptanNo.Location = new System.Drawing.Point(105, 26);
             this.TxtKaptanNo.Name = "TxtKaptanNo";
-            this.TxtKaptanNo.Size = new System.Drawing.Size(128, 27);
+            this.TxtKaptanNo.Size = new System.Drawing.Size(126, 27);
             this.TxtKaptanNo.TabIndex = 5;
             // 
             // label15
@@ -546,97 +575,57 @@
             this.label15.TabIndex = 4;
             this.label15.Text = "Kaptan No:";
             // 
-            // label16
+            // TxtKaptanAd
             // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(27, 95);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(77, 24);
-            this.label16.TabIndex = 11;
-            this.label16.Text = "Telefon:";
+            this.TxtKaptanAd.Location = new System.Drawing.Point(105, 62);
+            this.TxtKaptanAd.Name = "TxtKaptanAd";
+            this.TxtKaptanAd.Size = new System.Drawing.Size(126, 27);
+            this.TxtKaptanAd.TabIndex = 3;
             // 
-            // MskKaptanTelefon
+            // label14
             // 
-            this.MskKaptanTelefon.Location = new System.Drawing.Point(109, 92);
-            this.MskKaptanTelefon.Mask = "(999) 000-0000";
-            this.MskKaptanTelefon.Name = "MskKaptanTelefon";
-            this.MskKaptanTelefon.Size = new System.Drawing.Size(128, 27);
-            this.MskKaptanTelefon.TabIndex = 10;
-            // 
-            // BtnKaptan
-            // 
-            this.BtnKaptan.BackColor = System.Drawing.Color.SeaShell;
-            this.BtnKaptan.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.BtnKaptan.Location = new System.Drawing.Point(58, 125);
-            this.BtnKaptan.Name = "BtnKaptan";
-            this.BtnKaptan.Size = new System.Drawing.Size(123, 37);
-            this.BtnKaptan.TabIndex = 14;
-            this.BtnKaptan.Text = "Kaydet";
-            this.BtnKaptan.UseVisualStyleBackColor = false;
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(9, 62);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(90, 24);
+            this.label14.TabIndex = 2;
+            this.label14.Text = "Ad Soyad:";
             // 
             // groupBox5
             // 
+            this.groupBox5.Controls.Add(this.TxtKoltukNo);
+            this.groupBox5.Controls.Add(this.label20);
             this.groupBox5.Controls.Add(this.label19);
             this.groupBox5.Controls.Add(this.MskYolcuTc);
             this.groupBox5.Controls.Add(this.Btnrezervasyon);
-            this.groupBox5.Controls.Add(this.label17);
-            this.groupBox5.Controls.Add(this.MskYolcuTelefon);
             this.groupBox5.Controls.Add(this.TxtSeferNumara);
             this.groupBox5.Controls.Add(this.label18);
             this.groupBox5.Location = new System.Drawing.Point(261, 329);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(279, 179);
+            this.groupBox5.Size = new System.Drawing.Size(279, 189);
             this.groupBox5.TabIndex = 4;
             this.groupBox5.TabStop = false;
             // 
-            // Btnrezervasyon
+            // TxtKoltukNo
             // 
-            this.Btnrezervasyon.BackColor = System.Drawing.Color.SeaShell;
-            this.Btnrezervasyon.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Btnrezervasyon.Location = new System.Drawing.Point(53, 125);
-            this.Btnrezervasyon.Name = "Btnrezervasyon";
-            this.Btnrezervasyon.Size = new System.Drawing.Size(166, 37);
-            this.Btnrezervasyon.TabIndex = 14;
-            this.Btnrezervasyon.Text = "Rezervasyon Yap";
-            this.Btnrezervasyon.UseVisualStyleBackColor = false;
+            this.TxtKoltukNo.Location = new System.Drawing.Point(104, 98);
+            this.TxtKoltukNo.Name = "TxtKoltukNo";
+            this.TxtKoltukNo.Size = new System.Drawing.Size(159, 27);
+            this.TxtKoltukNo.TabIndex = 18;
             // 
-            // label17
+            // label20
             // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(13, 95);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(77, 24);
-            this.label17.TabIndex = 11;
-            this.label17.Text = "Telefon:";
-            // 
-            // MskYolcuTelefon
-            // 
-            this.MskYolcuTelefon.Location = new System.Drawing.Point(96, 92);
-            this.MskYolcuTelefon.Mask = "(999) 000-0000";
-            this.MskYolcuTelefon.Name = "MskYolcuTelefon";
-            this.MskYolcuTelefon.Size = new System.Drawing.Size(159, 27);
-            this.MskYolcuTelefon.TabIndex = 10;
-            // 
-            // TxtSeferNumara
-            // 
-            this.TxtSeferNumara.Location = new System.Drawing.Point(96, 26);
-            this.TxtSeferNumara.Name = "TxtSeferNumara";
-            this.TxtSeferNumara.Size = new System.Drawing.Size(159, 27);
-            this.TxtSeferNumara.TabIndex = 5;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(6, 29);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(87, 24);
-            this.label18.TabIndex = 4;
-            this.label18.Text = "Sefer No:";
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(6, 98);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(98, 24);
+            this.label20.TabIndex = 17;
+            this.label20.Text = "Koltuk No:";
             // 
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(52, 62);
+            this.label19.Location = new System.Drawing.Point(66, 65);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(38, 24);
             this.label19.TabIndex = 16;
@@ -644,19 +633,79 @@
             // 
             // MskYolcuTc
             // 
-            this.MskYolcuTc.Location = new System.Drawing.Point(96, 59);
+            this.MskYolcuTc.Location = new System.Drawing.Point(104, 65);
             this.MskYolcuTc.Mask = "00000000000";
             this.MskYolcuTc.Name = "MskYolcuTc";
             this.MskYolcuTc.Size = new System.Drawing.Size(159, 27);
             this.MskYolcuTc.TabIndex = 15;
             this.MskYolcuTc.ValidatingType = typeof(int);
             // 
+            // Btnrezervasyon
+            // 
+            this.Btnrezervasyon.BackColor = System.Drawing.Color.Salmon;
+            this.Btnrezervasyon.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Btnrezervasyon.Location = new System.Drawing.Point(66, 131);
+            this.Btnrezervasyon.Name = "Btnrezervasyon";
+            this.Btnrezervasyon.Size = new System.Drawing.Size(166, 37);
+            this.Btnrezervasyon.TabIndex = 14;
+            this.Btnrezervasyon.Text = "Rezervasyon Yap";
+            this.Btnrezervasyon.UseVisualStyleBackColor = false;
+            this.Btnrezervasyon.Click += new System.EventHandler(this.Btnrezervasyon_Click);
+            // 
+            // TxtSeferNumara
+            // 
+            this.TxtSeferNumara.Location = new System.Drawing.Point(104, 29);
+            this.TxtSeferNumara.Name = "TxtSeferNumara";
+            this.TxtSeferNumara.Size = new System.Drawing.Size(159, 27);
+            this.TxtSeferNumara.TabIndex = 5;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(17, 29);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(87, 24);
+            this.label18.TabIndex = 4;
+            this.label18.Text = "Sefer No:";
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.dataGridView1);
+            this.groupBox6.Location = new System.Drawing.Point(824, 12);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(250, 506);
+            this.groupBox6.TabIndex = 5;
+            this.groupBox6.TabStop = false;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(3, 23);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowTemplate.Height = 25;
+            this.dataGridView1.Size = new System.Drawing.Size(244, 480);
+            this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(546, 340);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(272, 175);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Peru;
-            this.ClientSize = new System.Drawing.Size(838, 520);
+            this.BackColor = System.Drawing.Color.IndianRed;
+            this.ClientSize = new System.Drawing.Size(1086, 542);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
@@ -676,6 +725,9 @@
             this.groupBox4.PerformLayout();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
+            this.groupBox6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -735,9 +787,12 @@
         private Label label19;
         private MaskedTextBox MskYolcuTc;
         private Button Btnrezervasyon;
-        private Label label17;
-        private MaskedTextBox MskYolcuTelefon;
         private TextBox TxtSeferNumara;
         private Label label18;
+        private TextBox TxtKoltukNo;
+        private Label label20;
+        private GroupBox groupBox6;
+        private DataGridView dataGridView1;
+        private PictureBox pictureBox1;
     }
 }
